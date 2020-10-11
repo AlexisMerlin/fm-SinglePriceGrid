@@ -1,0 +1,183 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  /* if default browser font is 16px, this sets it to 10px (1rem = 10px) */
+}
+
+body {
+  font-family: "Karla", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  background-color: #e5eff5;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: #3e52a3;
+}
+
+.main-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 7rem 3rem;
+}
+
+.main-card {
+  display: flex;
+  flex-direction: column;
+  width: 640px;
+  box-shadow: 0px 1rem 3rem rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  overflow: hidden;
+  color: white;
+}
+.main-card__footer {
+  display: flex;
+  color: white;
+  flex: 1 1 50%;
+  align-items: stretch;
+}
+@media screen and (max-width: 650px) {
+  .main-card__footer {
+    flex-direction: column;
+  }
+}
+
+.community {
+  background-color: white;
+  color: #98a6bd;
+  border-top: 8px;
+  display: flex;
+  flex-direction: column;
+  padding: 4rem;
+}
+@media screen and (max-width: 650px) {
+  .community {
+    padding: 3rem;
+  }
+}
+.community__title {
+  color: #2ab2af;
+  font-size: 2.3rem;
+  margin-bottom: 2.3rem;
+}
+@media screen and (max-width: 650px) {
+  .community__title {
+    font-size: 1.8rem;
+    margin-bottom: 1.8rem;
+  }
+}
+.community__subtitle {
+  color: #c0df34;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+@media screen and (max-width: 650px) {
+  .community__subtitle {
+    font-size: 1.5rem;
+  }
+}
+.community__content {
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+@media screen and (max-width: 650px) {
+  .community__content {
+    font-size: 1.5rem;
+  }
+}
+
+.subscription {
+  width: 50%;
+  background-color: #2ab2af;
+  color: #e5eff5;
+  padding: 4rem;
+}
+@media screen and (max-width: 650px) {
+  .subscription {
+    width: 100%;
+    padding: 3rem;
+  }
+}
+.subscription__title {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+}
+.subscription__price {
+  display: flex;
+  align-items: center;
+  font-size: 3.1rem;
+  font-weight: 700;
+}
+.subscription__price--detail {
+  font-size: 1.6rem;
+  font-weight: 400;
+  opacity: 0.7;
+  margin-left: 1.5rem;
+}
+.subscription__content {
+  margin: 1rem 0 3rem 0;
+}
+.subscription__button {
+  width: 100%;
+  font-size: 1.6rem;
+  padding: 1.4rem;
+  font-weight: 700;
+  background-color: #c0df34;
+  text-align: center;
+  color: #e5eff5;
+  border: none;
+  outline: none;
+  border-radius: 8px;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+  font-family: "Karla", sans-serif;
+  transition: transform 0.2s;
+}
+.subscription__button:hover {
+  cursor: pointer;
+  transform: translateY(-1rem);
+}
+
+.about {
+  width: 50%;
+  padding: 4rem;
+  font-size: 1.6rem;
+  background-color: rgba(42, 178, 175, 0.8);
+  color: #e5eff5;
+}
+@media screen and (max-width: 650px) {
+  .about {
+    width: 100%;
+    padding: 3rem;
+  }
+}
+.about__title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+.about__reasons {
+  padding-left: 0;
+}
+.about__reason {
+  list-style: none;
+  margin-bottom: 0.4rem;
+  font-size: 1.4rem;
+  opacity: 0.7;
+}
